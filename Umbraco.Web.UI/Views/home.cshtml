@@ -1,0 +1,95 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "master.cshtml";
+    var backgroundImage = Model.HeroBackgroundImage != null ? Model.HeroBackgroundImage.Url : String.Empty;
+}
+<section id="landing-header" class="landing-stripe" style="height: 738px;">
+            <div id="landing-hero">
+             <h1 style="color: mediumseagreen;">POUYA-HEART</h1>
+             <h2 style="font-size:20px">Internationally Patented Technology</h2>
+              <!--     <div>
+                    <span> </span>
+                  
+                </div>-->
+
+                <div id="landing-header-video">
+                    <a class=" btn video-button">
+                        <img src="/content/upload/1/root/right-triangle.png" width="19">Watch video
+                    </a>
+                </div>
+            </div>
+            <div id="landing-video">
+                <video autoplay="autoplay" loop="loop" class="lazy-hidden" __idm_id__="56800257">
+                    <source src="/content/upload/1/default/video/home.mp4" type="video/mp4">
+                    <source src="/content/upload/1/default/video/home.webm" type="video/webm">
+                  
+                </video>
+            </div>
+        </section>
+      
+      
+      
+      <section id="landing-4" class="landing-stripe"><div class="landing-container"><div id="landing-4-copy" class="landing-copy">
+     <h2 style="color: mediumseagreen;">POUYA-Heart</h2>
+<div>
+<p><strong>               Intelligent phonocardiography Machine</strong></p>
+      <div>
+<p style="text-align: left;
+    color: #282929;">Pouya-Heart is a passive intelligent machine for a precise screening of congenital heart diseases (CHD), in children as well as precise screening of critical heart diseases (CCHD),in neonates.</p>
+<a style="
+    background-color: black !important;
+" href="/products-1/" class="btn btn-blue btn-sm btn-outline subscribe-button">More</a>
+ </div>
+</div><div id="landing-4-terminal">
+
+  <img id="landing-3-terminal-glare" src="/content/upload/1/default/images/home/product-1.png" width="350" style=" padding: 0 200px 0 200px;height: 350px;">
+
+</div></div></section> 
+
+
+<section id="landing-popup-video">
+        <!--    <iframe src="#" width="90%" height="90%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>-->
+<video id="landing-video1" width="90%" height="90%" controls="" __idm_id__="56800258" class="lazy-hidden">
+  <source src="/content/upload/1/default/video/Video.mp4" type="video/mp4">
+ <source src="/content/upload/1/default/video/Video.webm" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<!--</iframe>
+-->        </section>
+
+
+
+
+
+
+
+
+
+<section id="landing-5" class="landing-stripe" style="visiblty:hidden;height:0px;">
+            <div id="landing-5-video-container">
+                <video id="landing-5-video" autoplay="" loop="" data-poster="" class="lazy-hidden" poster="">
+                    <source data-src="" type="video/webm" src="">
+                    <source data-src="" type="video/mp4" src="">
+                </video>
+            </div>
+            <div id="landing-5-copy" class="landing-copy">
+                <h1 class="cd-headline letters rotate-2 block-title">
+                    <span></span>
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible" style="opacity: 1;"></b>
+                       </span>
+                </h1>
+                <div></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+

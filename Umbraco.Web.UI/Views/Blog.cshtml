@@ -1,0 +1,31 @@
+﻿@using ContentModels = Umbraco.Web.PublishedModels;
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Blog>
+@using Umbraco.Web;
+@{
+    Layout = "master.cshtml";
+}
+@*@Html.Partial("~/Views/Partials/SectionHeader.cshtml")*@
+
+
+<section class="content-banner docs-banner" id="legal-banner">
+    <div class="content-banner-bg" style="display: block;">&nbsp;</div>
+
+   
+</section>
+
+
+<section class="content-stripe content-stripe-white docs-stripe" id="legal-content">
+    <div class="container">
+        <div class="docs-stripe-full">
+       
+        @Umbraco.RenderMacro("latestBlogposts",
+            new
+            {
+                numberOfPosts = Model.HowManyPostsShouldBeShown,
+                startNodeId = Model.Id
+            })
+        @{
+        }
+    </div>
+  </div>
+</section>

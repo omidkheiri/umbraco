@@ -1,0 +1,84 @@
+﻿@using Umbraco.Core.PropertyEditors
+@inherits UmbracoViewPage
+@{
+    Layout = null;
+    // Get basic design settings from the homepage
+    var home = (Home)Model.Root();
+    var font = home.Font;
+    var colorTheme = home.ColorTheme;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>@Model.Name - @home.Sitename</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+ <title>Innovative in Healthcare,capis,children’s heart diseases,Heart,Healthcare Innovations</title>
+    <meta name="description" content="Innovative in Healthcare,capis,children’s heart diseases,Heart,Healthcare Innovations" />
+    <meta name="keywords" content="Innovative in Healthcare,capis,children’s heart diseases,Heart,Healthcare Innovations" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <link rel="stylesheet" href="@Url.Content("~/Apps/Core/Content/Bootstrap/css/bootstrap.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/umbraco-starterkit-style.css")" />
+    @RenderSection("Header", required: false)
+</head>
+
+<body >
+  <nav id="nav" role="navigation" class="navbar">
+        <div class="container">
+            <div id="nav-buttons-right">
+                
+            </div>
+           
+            <div id="nav-image">
+
+            </div>
+            <div id="nav-buttons-left">
+                <a href="/Home/">Home</a>
+                <a href="/products-1/">Pouya-Heart</a>
+                <a href="/blog">Congenital Heart Malformations</a>
+                <a href="/heart-monitoring">Heart Monitoring</a>
+                <a href="/Brochure/">Brochure</a>
+                <a href="/about-us/">About us</a>
+                
+             
+            </div>
+        </div>
+    </nav>
+    <div id="content">
+        @RenderBody()
+    </div>
+
+ <div id="footer">
+<div class="container">
+<div id="footer-logo"><a href="index.html"><img height="25" src="/Apps/Core/Content/34/img/logo.png"> </a></div>
+
+<div id="footer-social" style="
+    margin: 3px;
+">&nbsp;
+<p style="color:#ffffff ;font-size:13px;">Rue de l ’Epargne 37 ,7000 Mons, Belgium<br>
+Tel: +32 (0) 65 84 48 86   Email: Info@capis.be</p>
+</div>
+
+<div id="footer-copyright">Copyright ©2014-2016 Capis . All rights reserved.</div>
+</div>
+</div>
+
+ @*   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+    <script src="@Url.Content("~/scripts/umbraco-starterkit-app.js")"></script>
+*@
+
+
+
+    <script src="/Apps/Core/Content/34/js/global.1de3acbd.js"></script>
+    <script src="/Apps/Core/Content/34/js/landing.c02c8fd3.js"></script>
+   
+</body>
+
+</html>
